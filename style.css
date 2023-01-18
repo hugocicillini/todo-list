@@ -185,4 +185,8 @@ footer {
        width: 2rem;
     }
 
+    .todo h3 {
+        font-size: 1.2rem;
+    }
+
 }
