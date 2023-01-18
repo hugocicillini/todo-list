@@ -1,0 +1,150 @@
+@font-face {
+    font-family: black;
+    src: url(Black-coffee-shadow.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: black;
+}
+
+body {
+    background-color: azure;
+}
+
+.todo-container {
+    max-width: 450px;
+    border: 1px solid black;
+    margin: 3rem auto;
+    background-color: white;
+    border-radius: 15px;
+    font-size: 1.3rem;
+}
+
+header {
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+#todo-form,
+#edit-form,
+#search,
+#filter,
+#todo-list {
+    margin: .3rem 3rem;
+}
+
+#todo-list {
+    margin-bottom: 3rem;
+}
+
+#todo-form p,
+#edit-form p {
+    margin-bottom: .5rem;
+    font-weight: bold;
+}
+
+.form-control {
+    display: flex;
+}
+
+.form-control input {
+    margin-right: .3rem;
+    width: 100%;
+    padding: .5rem;
+}
+
+button {
+    padding: .3rem .6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+    background-color: rgba(128, 128, 128, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(128, 128, 128, 0.6);
+}
+
+button[type="submit"] {
+    width: 3rem;
+}
+
+#cancel-edit-btn {
+    margin-top: .5rem;
+}
+
+input::placeholder{
+    color: black;
+}
+
+#toolbar {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+#toolbar h4 {
+    margin: 0.5rem 0;
+}
+
+#search {
+    padding-right: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#search div{
+    display: flex;
+}
+
+#search input {
+    margin-right: .3rem;
+    padding: .5rem;
+}
+
+#filter {
+    display: flex;
+    flex-direction: column;
+}
+
+#filter select {
+    padding: .5rem;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+.todo h3 {
+    flex: 1;
+}
+
+.todo button {
+    margin-left: .3rem;
+}
+
+.done {
+    background-color: rgba(128, 128, 128, 0.4);
+}
+
+.done h3 {
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.hide {
+    display: none;
+}
