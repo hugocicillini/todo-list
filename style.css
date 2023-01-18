@@ -119,6 +119,10 @@ input::placeholder{
     padding: .5rem;
 }
 
+#todo-list {
+    border-top: 1px solid #ddd;
+}
+
 .todo {
     display: flex;
     justify-content: space-around;
@@ -147,4 +151,37 @@ input::placeholder{
 
 .hide {
     display: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #ddd;
+    text-align: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    .todo-container {
+        border: 1px solid black;
+        margin: 3rem;
+        background-color: white;
+        border-radius: 0;
+        font-size: 1.2rem;
+    }
+
+    header {
+        font-size: 1.5rem;
+    }
+
+    #toolbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #todo-input,
+    #search-input {
+        width: 100vw;
+    }
+
 }
