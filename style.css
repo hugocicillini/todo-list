@@ -15,12 +15,13 @@ body {
 }
 
 .todo-container {
-    max-width: 450px;
+    max-width: 28rem;
     border: 1px solid black;
     margin: 3rem auto;
+    padding-bottom: 2rem;
     background-color: white;
     border-radius: 15px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 header {
@@ -31,14 +32,8 @@ header {
 
 #todo-form,
 #edit-form,
-#search,
-#filter,
 #todo-list {
-    margin: .3rem 3rem;
-}
-
-#todo-list {
-    margin-bottom: 3rem;
+    margin: .5rem 3rem;
 }
 
 #todo-form p,
@@ -73,12 +68,8 @@ button:hover {
     background-color: rgba(128, 128, 128, 0.6);
 }
 
-button[type="submit"] {
-    width: 3rem;
-}
-
 #cancel-edit-btn {
-    margin-top: .5rem;
+    margin-top: .3rem;
 }
 
 input::placeholder{
@@ -87,7 +78,8 @@ input::placeholder{
 
 #toolbar {
     display: flex;
-    margin-bottom: 1rem;
+    justify-content: space-between;
+    margin: 1rem 3rem;
 }
 
 #toolbar h4 {
@@ -95,8 +87,6 @@ input::placeholder{
 }
 
 #search {
-    padding-right: 1rem;
-    margin-right: 1rem;
     display: flex;
     flex-direction: column;
 }
@@ -106,8 +96,8 @@ input::placeholder{
 }
 
 #search input {
-    margin-right: .3rem;
     padding: .5rem;
+    margin-right: .3rem;
 }
 
 #filter {
@@ -179,9 +169,9 @@ footer {
         flex-direction: column;
     }
 
-    #todo-input,
+    #form-control,
     #search-input {
-        width: 100vw;
+        width: 100%;
     }
 
 }
